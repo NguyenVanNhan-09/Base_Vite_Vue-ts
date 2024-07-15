@@ -1,6 +1,6 @@
 # Vue 3 + TypeScript + Vite
 `Các extension cần cài`
-```
+```npm 
    1. Vetur
    2. Prettier - Code formatter
 ``` 

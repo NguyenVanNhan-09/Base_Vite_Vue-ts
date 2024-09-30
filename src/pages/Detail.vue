@@ -37,7 +37,7 @@
                 </ol>
             </nav>
             <!-- navbar 2 -->
-            <nav class="pt-4 border-b">
+            <nav class="pt-4 border-b scroll-smooth">
                 <ul class="flex justify-between">
                     <li class="w-full hover:bg-gray-200 active">
                         <a href="#overview" class="text-center block py-4">
@@ -45,17 +45,17 @@
                         </a>
                     </li>
                     <li class="w-full hover:bg-gray-200">
-                        <a href="#price-info" class="text-center block py-4">
+                        <a href="#target-section" class="text-center block py-4">
                             <span class="inline-block text-sm">Thông tin giá</span>
                         </a>
                     </li>
                     <li class="w-full hover:bg-gray-200">
-                        <a href="#amenities" class="text-center block py-4">
+                        <a href="#target-2" class="text-center block py-4">
                             <span class="inline-block text-sm">Tiện nghi</span>
                         </a>
                     </li>
                     <li class="w-full hover:bg-gray-200">
-                        <a href="#reviews" class="text-center block py-4">
+                        <a href="#general-rules" class="text-center block py-4">
                             <span class="inline-block text-sm">Quy tắc chung</span>
                         </a>
                     </li>
@@ -459,7 +459,7 @@
             <!-- filter Phòng trống-->
 
             <!--Table -->
-            <div class="py-6">
+            <div class="py-6" id="target-section">
                 <table class="min-w-full border-b border-blue-400">
                     <thead class="sticky top-0 bg-[rgb(76,118,178)] text-white z-10">
                         <tr>
@@ -1009,13 +1009,6 @@ Vãi cả con chim non</textarea
                             <i class="fas fa-angle-right"></i>
                         </button>
                     </div>
-                    <button
-                        data-modal-target="default-modal"
-                        data-modal-toggle="default-modal"
-                        class="mt-6 block w-full max-w-xs mx-auto border border-blue-500 rounded-lg px-4 py-2 bg-white text-blue-500 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-sm text-center transition-colors"
-                    >
-                        Đọc tất cả đánh giá
-                    </button>
                 </div>
 
                 <div class="py-5">
@@ -1029,1135 +1022,1248 @@ Vãi cả con chim non</textarea
                     </button>
                 </div>
             </div>
-        </div>
-
-        <!-- Các tiện nghi -->
-        <div>
-            <div class="flex justify-between mt-10">
-                <div>
-                    <h1 class="font-bold text-3xl">Các tiện nghi của Nostalgia Boutique Hotel</h1>
-                </div>
-
-                <div>
-                    <button
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-"
-                    >
-                        <span class="text-xl">Kiểm tra ngày còn trống</span>
-                    </button>
-                </div>
-            </div>
-            <div class="pb-10">
-                <h3 class="text-gray-500 text-xl">Tiện nghi tuyệt vời! Điểm đánh giá: 8.2</h3>
-            </div>
-            <!-- các tiện nghi được ưa chuộng nhất -->
-            <div class="space-y-6">
-                <div>
-                    <h3 class="font-bold text-2xl">Các tiện nghi được ưa chuộng nhất</h3>
-                </div>
-
-                <div class="flex justify-between">
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-person-swimming text-green-600"></i>
-                        <span>Hồ bơi trong nhà</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="bi bi-airplane text-green-600"></i>
-                        <span>Xe đưa đón sân bay</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-ban-smoking text-green-600"></i>
-                        <span>Phòng không hút thuốc</span>
-                    </div>
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-dumbbell text-green-600"></i>
-                        <span>Trung tâm thể dục</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-wifi text-green-600"></i>
-                        <span>WiFi miễn phí</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-people-roof text-green-600"></i>
-                        <span>Phòng gia đình</span>
-                    </div>
-                </div>
-
-                <div class="flex gap-6">
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-people-carry-box text-green-600"></i>
-                        <span>Dịch vụ phòng</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="fa-solid fa-square-parking text-green-600"></i>
-                        <span>Chỗ đỗ xe miễn phí</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="fas fa-glass-martini text-green-600"></i>
-                        <span>Quầy bar</span>
-                    </div>
-
-                    <div class="space-x-2 text-lg">
-                        <i class="fas fa-umbrella-beach text-green-600"></i>
-                        <span>Khu vực bãi tắm riêng</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-12 grid grid-cols-3 gap-8 items-start">
-                <!-- cột 1 -->
-                <div class="flex flex-col gap-3 items-center">
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-regular fa-user text-2xl"></i>
-                        <h2 class="font-bold text-xl">Cực kỳ phù hợp cho kỳ lưu trú của bạn</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Phòng tắm riêng </span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Bãi biển </span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Phòng tắm riêng </span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Chỗ đỗ xe miễn phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">WiFi miễn phí </span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Điều hòa không khí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> TV màn hình phẳng </span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tầm nhìn ra khung cảnh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Chỗ đỗ xe </span>
-                    </div>
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Xe đưa đón sân bay</span>
-                    </div>
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Phòng không hút thuốc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-bath text-2xl"></i>
-                        <h2 class="font-bold text-xl">Phòng tắm</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giấy vệ sinh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Khăn tắm</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Chậu rửa vệ sinh (bidet)</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Bồn tắm hoặc Vòi sen</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Dép</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phòng tắm riêng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Nhà vệ sinh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Đồ vệ sinh cá nhân miễn phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Áo choàng tắm</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Máy sấy tóc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Vòi sen</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-bed text-2xl"></i>
-                        <h2 class="font-bold text-xl">Phòng ngủ</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Ra trải giường</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Tủ hoặc phòng để quần áo</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-mountain text-2xl"></i>
-                        <h2 class="font-bold text-xl">Tầm nhìn</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Nhìn ra thành phố</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Tầm nhìn ra khung cảnh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-tree text-2xl"></i>
-                        <h2 class="font-bold text-xl">Ngoài trời</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bàn ghế ngoài trời</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Sân hiên phơi nắng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Khu vực bãi tắm riêng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Sân thượng / hiên</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-utensils text-2xl"></i>
-                        <h2 class="font-bold text-xl">Nhà bếp</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bếp chung</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bàn ăn</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tủ lạnh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-bed text-2xl"></i>
-                        <h2 class="font-bold text-xl">Tiện ích trong phòng</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Ổ điện gần giường</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giá treo quần áo</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
-                        <i class="fa-solid fa-running text-2xl"></i>
-                        <h2 class="font-bold text-xl">Hoạt động</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Cho thuê xe đạp</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Sự kiện thể thao (truyền hình trực tiếp)</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Giờ vàng </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tour đi xe đạp</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Tour đi bộ</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Đêm phim</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span> <br />
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Hài độc thoại</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Triển lãm tranh đương đại </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bãi biển</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Thiết bị dành cho cầu lông </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Lặn với ống thở </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Đi bộ đường dài</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Ca-nô</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg"> Sân gôn (trong vòng 3km)</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-                </div>
-
-                <!-- cột 2 -->
-                <div class="flex flex-col gap-3 items-start">
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-couch text-2xl"></i>
-                        <h2 class="font-bold text-xl">Khu vực phòng khách</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Khu vực phòng ăn</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Khu vực tiếp khách</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bàn làm việc</span>
-                    </div>
-
-                    <!-- Truyền thông & Công nghệ -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-tv text-2xl"></i>
-                        <h2 class="font-bold text-xl">Truyền thông & Công nghệ</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">TV màn hình phẳng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Truyền hình cáp</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Truyền hình vệ tinh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Điện thoại</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">TV</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Truyền hình trả tiền</span>
-                    </div>
-
-                    <!-- Đồ ăn & thức uống -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-utensils text-2xl"></i>
-                        <h2 class="font-bold text-xl">Đồ ăn & thức uống</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Quầy bar</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Minibar</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Nhà hàng</span>
-                    </div>
-
-                    <!-- Internet -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-wifi text-2xl"></i>
-                        <h2 class="font-bold text-xl">Internet</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <span class="text-lg text-gray-500">Wi-fi có ở các phòng khách sạn và miễn phí.</span>
-                    </div>
-
-                    <!-- Chỗ đậu xe -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-car text-2xl"></i>
-                        <h2 class="font-bold text-xl">Chỗ đậu xe</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <span class="text-lg text-gray-500">
-                            Có chỗ đỗ xe riêng miễn phí tại một điểm gần đó (không cần đặt chỗ trước).</span
-                        >
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Chỗ đậu xe ngoài đường</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ đỗ xe cho khách</span>
-                    </div>
-
-                    <!-- Phương tiện đi lại -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-bus text-2xl"></i>
-                        <h2 class="font-bold text-xl">Phương tiện đi lại</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Vé đi phương tiện công cộng</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <!-- Dịch vụ lễ tân -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-concierge-bell text-2xl"></i>
-                        <h2 class="font-bold text-xl">Dịch vụ lễ tân</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tủ khóa</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Nhận/trả phòng riêng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ trợ giúp đặc biệt</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giữ hành lí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bàn bán tour</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Thu đổi ngoại tệ</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Nhận/trả phòng cấp tốc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Nhận/trả phòng cấp tốc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Lễ tân 24 giờ</span>
-                    </div>
-
-                    <!-- Dịch vụ giải trí và gia đình -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-gamepad text-2xl"></i>
-                        <h2 class="font-bold text-xl">Dịch vụ giải trí và gia đình</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Cửa an toàn cho trẻ nhỏ</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-4">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Cửa an toàn cho trẻ nhỏ</span>
-                    </div>
-
-                    <!-- Dịch vụ lau dọn -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-broom text-2xl"></i>
-                        <h2 class="font-bold text-xl">Dịch vụ lau dọn</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dọn phòng hàng ngày</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bàn ủi li quần</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ là (ủi)</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giặt khô </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giặt ủi</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <!-- Dịch vụ cho doanh nhân -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-briefcase text-2xl"></i>
-                        <h2 class="font-bold text-xl">Dịch vụ cho doanh nhân</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Fax/photocopy </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Trung tâm dịch vụ doanh nhân</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tiện nghi tổ chức hội họp/tiệc</span>
-                    </div>
-
-                    <!-- An ninh -->
-                    <div class="flex gap-3 items-center">
-                        <i class="fa-solid fa-shield-alt text-2xl"></i>
-                        <h2 class="font-bold text-xl">An ninh</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bình chữa cháy</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Hệ thống CCTV bên ngoài chỗ nghỉ</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Hệ thống CCTV trong khu vực chung</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Thiết bị báo cháy</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Báo động an ninh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Ổ khóa mở bằng thẻ</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Ổ khóa</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bảo vệ 24/7</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Két an toàn</span>
-                    </div>
-                </div>
-                <!-- cột 3 -->
-                <div class="flex flex-col gap-3 items-start">
-                    <!-- Tổng quát -->
-                    <div class="flex gap-3 items-center">
-                        <div class="flex items-center justify-center w-12 h-12 text-black">
-                            <i class="bi bi-info-circle text-2xl"></i>
-                        </div>
-                        <h2 class="font-bold text-xl">Tổng quát</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ đưa đón</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Thiết bị báo carbon monoxide</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giao nhận đồ tạp hóa </span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Cửa hàng tạp hóa (trong khuôn viên)</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Khu vực xem TV/sảnh chung</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Khu vực cho phép hút thuốc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Điều hòa nhiệt độ</span>
-                    </div>
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phòng không gây dị ứng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ báo thức</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Sàn lát gỗ</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Sàn lát gạch/đá cẩm thạch</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Hệ thống cách âm</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Cho thuê xe hơi</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Sàn trải thảm</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phòng cách âm</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Thang máy</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phòng gia đình</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Xe đưa đón sân bay</span>
-                        <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phòng không hút thuốc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Bàn ủi</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ báo thức</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dịch vụ phòng</span>
-                    </div>
-                    <!-- Lối vào dành cho người khuyết tật -->
-                    <div class="flex gap-3 items-center">
-                        <div class="flex items-center justify-center w-12 h-12 text-black">
-                            <i class="bi bi-person-check text-2xl"></i>
-                        </div>
-                        <h2 class="font-bold text-xl">Lối vào dành cho người khuyết tật</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Xe lăn có thể đi đến mọi nơi trong toàn bộ khuôn viên </span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Các tầng trên đi lên bằng thang máy</span>
-                    </div>
-
-                    <!-- Hồ bơi trong nhà -->
-                    <div class="flex gap-3 items-center">
-                        <div class="flex items-center justify-center w-12 h-12 text-black">
-                            <i class="bi bi-water text-2xl"></i>
-                        </div>
-                        <div class="flex items-center">
-                            <h2 class="font-bold text-xl">Hồ bơi trong nhà</h2>
-                            <span class="ml-2 bg-green-100 text-green-800 px-2 py-1">Miễn phí!</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Giờ mở cửa</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mở cửa quanh năm</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Dành cho mọi độ tuổi</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Chỗ cạn</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Khăn hồ bơi/bãi biển</span>
-                    </div>
-
-                    <!-- Chăm sóc sức khỏe -->
-                    <div class="flex gap-3 items-center">
-                        <div class="flex items-center justify-center w-12 h-12 text-black">
-                            <i class="bi bi-heart text-2xl"></i>
-                        </div>
-                        <h2 class="font-bold text-xl">Chăm sóc sức khỏe</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Hồ bơi trẻ em</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Lớp thể dục</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Lớp học yoga</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phòng gym</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa toàn thân</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa tay</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa đầu</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa dành cho cặp đôi</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa chân</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa cổ</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Mát-xa lưng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Gói spa/chăm sóc sức khỏe</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Khu vực thư giãn/spa lounge</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Ô (dù) che nắng loại to</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Ghế/ghế dài tắm nắng</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Massage</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Phụ phí</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Trung tâm thể dục</span>
-                    </div>
-
-                    <!-- Ngôn ngữ được sử dụng -->
-                    <div class="flex gap-3 items-center">
-                        <div class="flex items-center justify-center w-12 h-12 text-black">
-                            <i class="bi bi-globe text-2xl"></i>
-                        </div>
-                        <h2 class="font-bold text-xl">Ngôn ngữ được sử dụng</h2>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tiếng Anh</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tiếng Hàn Quốc</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tiếng Việt</span>
-                    </div>
-
-                    <div class="flex items-center justify-start w-full ml-2 gap-3">
-                        <i class="fa-solid fa-check text-green-800"></i>
-                        <span class="text-lg">Tiếng Trung</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-end text-lg">
-                <span>Bạn không tìm thấy một số thông tin? </span>
-                <button class="text-blue-600 font-semibold ml-2">Đúng vậy</button>
-                <span class="mx-1">/</span>
-                <button class="text-blue-600 font-semibold">Không phải</button>
-            </div>
-        </div>
-
-        <!-- chính sách -->
-        <div class="py-10 space-y-3">
-            <div class="flex justify-between">
-                <div>
-                    <h1 class="font-bold text-3xl">Chính sách</h1>
-                </div>
-
-                <div>
-                    <button
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-"
-                    >
-                        <span>Xem phòng trống</span>
-                    </button>
-                </div>
-            </div>
-
+            <!-- Các tiện nghi -->
             <div>
-                <h2 class="text-xl text-gray-600">
-                    Nostalgia Boutique Hotel nhận yêu cầu đặc biệt - gửi yêu cầu trong bước kế tiếp!
-                </h2>
+                <div class="flex justify-between mt-10" id="target-2">
+                    <div>
+                        <h1 class="font-bold text-3xl">Các tiện nghi của Nostalgia Boutique Hotel</h1>
+                    </div>
+
+                    <div>
+                        <button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-"
+                        >
+                            <span class="text-xl">Kiểm tra ngày còn trống</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pb-10">
+                    <h3 class="text-gray-500 text-xl">Tiện nghi tuyệt vời! Điểm đánh giá: 8.2</h3>
+                </div>
+                <!-- các tiện nghi được ưa chuộng nhất -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-2xl">Các tiện nghi được ưa chuộng nhất</h3>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-person-swimming text-green-600"></i>
+                            <span>Hồ bơi trong nhà</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="bi bi-airplane text-green-600"></i>
+                            <span>Xe đưa đón sân bay</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-ban-smoking text-green-600"></i>
+                            <span>Phòng không hút thuốc</span>
+                        </div>
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-dumbbell text-green-600"></i>
+                            <span>Trung tâm thể dục</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-wifi text-green-600"></i>
+                            <span>WiFi miễn phí</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-people-roof text-green-600"></i>
+                            <span>Phòng gia đình</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-people-carry-box text-green-600"></i>
+                            <span>Dịch vụ phòng</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="fa-solid fa-square-parking text-green-600"></i>
+                            <span>Chỗ đỗ xe miễn phí</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="fas fa-glass-martini text-green-600"></i>
+                            <span>Quầy bar</span>
+                        </div>
+
+                        <div class="space-x-2 text-lg">
+                            <i class="fas fa-umbrella-beach text-green-600"></i>
+                            <span>Khu vực bãi tắm riêng</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 grid grid-cols-3 gap-8 items-start">
+                    <!-- cột 1 -->
+                    <div class="flex flex-col gap-3 items-center">
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-regular fa-user text-2xl"></i>
+                            <h2 class="font-bold text-xl">Cực kỳ phù hợp cho kỳ lưu trú của bạn</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Phòng tắm riêng </span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Bãi biển </span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Phòng tắm riêng </span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Chỗ đỗ xe miễn phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">WiFi miễn phí </span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Điều hòa không khí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> TV màn hình phẳng </span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tầm nhìn ra khung cảnh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Chỗ đỗ xe </span>
+                        </div>
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Xe đưa đón sân bay</span>
+                        </div>
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Phòng không hút thuốc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-bath text-2xl"></i>
+                            <h2 class="font-bold text-xl">Phòng tắm</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giấy vệ sinh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Khăn tắm</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Chậu rửa vệ sinh (bidet)</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Bồn tắm hoặc Vòi sen</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Dép</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phòng tắm riêng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Nhà vệ sinh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Đồ vệ sinh cá nhân miễn phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Áo choàng tắm</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Máy sấy tóc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Vòi sen</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-bed text-2xl"></i>
+                            <h2 class="font-bold text-xl">Phòng ngủ</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Ra trải giường</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Tủ hoặc phòng để quần áo</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-mountain text-2xl"></i>
+                            <h2 class="font-bold text-xl">Tầm nhìn</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Nhìn ra thành phố</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Tầm nhìn ra khung cảnh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-tree text-2xl"></i>
+                            <h2 class="font-bold text-xl">Ngoài trời</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bàn ghế ngoài trời</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Sân hiên phơi nắng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Khu vực bãi tắm riêng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Sân thượng / hiên</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-utensils text-2xl"></i>
+                            <h2 class="font-bold text-xl">Nhà bếp</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bếp chung</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bàn ăn</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tủ lạnh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-bed text-2xl"></i>
+                            <h2 class="font-bold text-xl">Tiện ích trong phòng</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Ổ điện gần giường</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giá treo quần áo</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4 py-2">
+                            <i class="fa-solid fa-running text-2xl"></i>
+                            <h2 class="font-bold text-xl">Hoạt động</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Cho thuê xe đạp</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Sự kiện thể thao (truyền hình trực tiếp)</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Giờ vàng </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tour đi xe đạp</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Tour đi bộ</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Đêm phim</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span> <br />
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Hài độc thoại</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Triển lãm tranh đương đại </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bãi biển</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Thiết bị dành cho cầu lông </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Lặn với ống thở </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Đi bộ đường dài</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Ca-nô</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg"> Sân gôn (trong vòng 3km)</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+                    </div>
+
+                    <!-- cột 2 -->
+                    <div class="flex flex-col gap-3 items-start">
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-couch text-2xl"></i>
+                            <h2 class="font-bold text-xl">Khu vực phòng khách</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Khu vực phòng ăn</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Khu vực tiếp khách</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bàn làm việc</span>
+                        </div>
+
+                        <!-- Truyền thông & Công nghệ -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-tv text-2xl"></i>
+                            <h2 class="font-bold text-xl">Truyền thông & Công nghệ</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">TV màn hình phẳng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Truyền hình cáp</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Truyền hình vệ tinh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Điện thoại</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">TV</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Truyền hình trả tiền</span>
+                        </div>
+
+                        <!-- Đồ ăn & thức uống -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-utensils text-2xl"></i>
+                            <h2 class="font-bold text-xl">Đồ ăn & thức uống</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Quầy bar</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Minibar</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Nhà hàng</span>
+                        </div>
+
+                        <!-- Internet -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-wifi text-2xl"></i>
+                            <h2 class="font-bold text-xl">Internet</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <span class="text-lg text-gray-500">Wi-fi có ở các phòng khách sạn và miễn phí.</span>
+                        </div>
+
+                        <!-- Chỗ đậu xe -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-car text-2xl"></i>
+                            <h2 class="font-bold text-xl">Chỗ đậu xe</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <span class="text-lg text-gray-500">
+                                Có chỗ đỗ xe riêng miễn phí tại một điểm gần đó (không cần đặt chỗ trước).</span
+                            >
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Chỗ đậu xe ngoài đường</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ đỗ xe cho khách</span>
+                        </div>
+
+                        <!-- Phương tiện đi lại -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-bus text-2xl"></i>
+                            <h2 class="font-bold text-xl">Phương tiện đi lại</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Vé đi phương tiện công cộng</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <!-- Dịch vụ lễ tân -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-concierge-bell text-2xl"></i>
+                            <h2 class="font-bold text-xl">Dịch vụ lễ tân</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tủ khóa</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Nhận/trả phòng riêng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ trợ giúp đặc biệt</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giữ hành lí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bàn bán tour</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Thu đổi ngoại tệ</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Nhận/trả phòng cấp tốc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Nhận/trả phòng cấp tốc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Lễ tân 24 giờ</span>
+                        </div>
+
+                        <!-- Dịch vụ giải trí và gia đình -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-gamepad text-2xl"></i>
+                            <h2 class="font-bold text-xl">Dịch vụ giải trí và gia đình</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Cửa an toàn cho trẻ nhỏ</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-4">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Cửa an toàn cho trẻ nhỏ</span>
+                        </div>
+
+                        <!-- Dịch vụ lau dọn -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-broom text-2xl"></i>
+                            <h2 class="font-bold text-xl">Dịch vụ lau dọn</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dọn phòng hàng ngày</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bàn ủi li quần</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ là (ủi)</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giặt khô </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giặt ủi</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <!-- Dịch vụ cho doanh nhân -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-briefcase text-2xl"></i>
+                            <h2 class="font-bold text-xl">Dịch vụ cho doanh nhân</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Fax/photocopy </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Trung tâm dịch vụ doanh nhân</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tiện nghi tổ chức hội họp/tiệc</span>
+                        </div>
+
+                        <!-- An ninh -->
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-shield-alt text-2xl"></i>
+                            <h2 class="font-bold text-xl">An ninh</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bình chữa cháy</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Hệ thống CCTV bên ngoài chỗ nghỉ</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Hệ thống CCTV trong khu vực chung</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Thiết bị báo cháy</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Báo động an ninh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Ổ khóa mở bằng thẻ</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Ổ khóa</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bảo vệ 24/7</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Két an toàn</span>
+                        </div>
+                    </div>
+                    <!-- cột 3 -->
+                    <div class="flex flex-col gap-3 items-start">
+                        <!-- Tổng quát -->
+                        <div class="flex gap-3 items-center">
+                            <div class="flex items-center justify-center w-12 h-12 text-black">
+                                <i class="bi bi-info-circle text-2xl"></i>
+                            </div>
+                            <h2 class="font-bold text-xl">Tổng quát</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ đưa đón</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Thiết bị báo carbon monoxide</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giao nhận đồ tạp hóa </span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Cửa hàng tạp hóa (trong khuôn viên)</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Khu vực xem TV/sảnh chung</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Khu vực cho phép hút thuốc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Điều hòa nhiệt độ</span>
+                        </div>
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phòng không gây dị ứng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ báo thức</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Sàn lát gỗ</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Sàn lát gạch/đá cẩm thạch</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Hệ thống cách âm</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Cho thuê xe hơi</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Sàn trải thảm</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phòng cách âm</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Thang máy</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phòng gia đình</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Xe đưa đón sân bay</span>
+                            <span class="w-16 h-6 bg-gray-200">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phòng không hút thuốc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Bàn ủi</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ báo thức</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dịch vụ phòng</span>
+                        </div>
+                        <!-- Lối vào dành cho người khuyết tật -->
+                        <div class="flex gap-3 items-center">
+                            <div class="flex items-center justify-center w-12 h-12 text-black">
+                                <i class="bi bi-person-check text-2xl"></i>
+                            </div>
+                            <h2 class="font-bold text-xl">Lối vào dành cho người khuyết tật</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Xe lăn có thể đi đến mọi nơi trong toàn bộ khuôn viên </span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Các tầng trên đi lên bằng thang máy</span>
+                        </div>
+
+                        <!-- Hồ bơi trong nhà -->
+                        <div class="flex gap-3 items-center">
+                            <div class="flex items-center justify-center w-12 h-12 text-black">
+                                <i class="bi bi-water text-2xl"></i>
+                            </div>
+                            <div class="flex items-center">
+                                <h2 class="font-bold text-xl">Hồ bơi trong nhà</h2>
+                                <span class="ml-2 bg-green-100 text-green-800 px-2 py-1">Miễn phí!</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Giờ mở cửa</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mở cửa quanh năm</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Dành cho mọi độ tuổi</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Chỗ cạn</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Khăn hồ bơi/bãi biển</span>
+                        </div>
+
+                        <!-- Chăm sóc sức khỏe -->
+                        <div class="flex gap-3 items-center">
+                            <div class="flex items-center justify-center w-12 h-12 text-black">
+                                <i class="bi bi-heart text-2xl"></i>
+                            </div>
+                            <h2 class="font-bold text-xl">Chăm sóc sức khỏe</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Hồ bơi trẻ em</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Lớp thể dục</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Lớp học yoga</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phòng gym</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa toàn thân</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa tay</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa đầu</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa dành cho cặp đôi</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa chân</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa cổ</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Mát-xa lưng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Gói spa/chăm sóc sức khỏe</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Khu vực thư giãn/spa lounge</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Ô (dù) che nắng loại to</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Ghế/ghế dài tắm nắng</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Massage</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Phụ phí</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Trung tâm thể dục</span>
+                        </div>
+
+                        <!-- Ngôn ngữ được sử dụng -->
+                        <div class="flex gap-3 items-center">
+                            <div class="flex items-center justify-center w-12 h-12 text-black">
+                                <i class="bi bi-globe text-2xl"></i>
+                            </div>
+                            <h2 class="font-bold text-xl">Ngôn ngữ được sử dụng</h2>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tiếng Anh</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tiếng Hàn Quốc</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tiếng Việt</span>
+                        </div>
+
+                        <div class="flex items-center justify-start w-full ml-2 gap-3">
+                            <i class="fa-solid fa-check text-green-800"></i>
+                            <span class="text-lg">Tiếng Trung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end text-lg">
+                    <span>Bạn không tìm thấy một số thông tin? </span>
+                    <button class="text-blue-600 font-semibold ml-2">Đúng vậy</button>
+                    <span class="mx-1">/</span>
+                    <button class="text-blue-600 font-semibold">Không phải</button>
+                </div>
             </div>
 
-            <div class="mx-auto p-4">
-                <div class="border border-gray-200 rounded-lg p-4">
-                    <div class="space-y-4 w-full">
-                        <!-- Hàng 1 -->
-                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-sign-in-alt mr-2"></i>
-                                <h2 class="font-bold">Nhận phòng</h2>
-                            </div>
-                            <div class="flex flex-col w-1/2 h-full">
-                                <span>Từ 14:00</span>
-                                <span
-                                    >Khách được yêu cầu xuất trình giấy tờ tùy thân có ảnh và thẻ tín dụng lúc nhận
-                                    phòng</span
-                                >
-                            </div>
-                        </div>
+            <!-- chính sách -->
+            <div id="" class="py-10 space-y-3">
+                <div class="flex justify-between">
+                    <div>
+                        <h1 class="font-bold text-3xl">Chính sách</h1>
+                    </div>
 
-                        <!-- Hàng 2 -->
-                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-sign-out-alt mr-2"></i>
-                                <span>Trả phòng</span>
-                            </div>
-                            <div class="flex flex-col w-1/2 h-full">
-                                <span>Đến 12:00</span>
-                            </div>
-                        </div>
+                    <div>
+                        <button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-"
+                        >
+                            <span>Xem phòng trống</span>
+                        </button>
+                    </div>
+                </div>
 
-                        <!-- Hàng 3 -->
-                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-credit-card mr-2"></i>
-                                <span>Hủy đặt phòng/ Trả trước</span>
-                            </div>
-                            <div class="flex flex-col r w-1/2 h-full">
-                                <span
-                                    >Các chính sách hủy và thanh toán trước sẽ khác nhau tùy vào từng loại chỗ nghỉ. Vui
-                                    lòng nhập ngày lưu trú và xem điều kiện áp dụng cho lựa chọn chỗ nghỉ của bạn.</span
-                                >
-                            </div>
-                        </div>
+                <div>
+                    <h2 class="text-xl text-gray-600">
+                        Nostalgia Boutique Hotel nhận yêu cầu đặc biệt - gửi yêu cầu trong bước kế tiếp!
+                    </h2>
+                </div>
 
-                        <!-- Hàng 4 -->
-                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-child mr-2"></i>
-                                <span>Trẻ em và giường</span>
+                <div class="mx-auto p-4">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="space-y-4 w-full">
+                            <!-- Hàng 1 -->
+                            <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-sign-in-alt mr-2"></i>
+                                    <h2 class="font-bold">Nhận phòng</h2>
+                                </div>
+                                <div class="flex flex-col w-1/2 h-full">
+                                    <span>Từ 14:00</span>
+                                    <span
+                                        >Khách được yêu cầu xuất trình giấy tờ tùy thân có ảnh và thẻ tín dụng lúc nhận
+                                        phòng</span
+                                    >
+                                </div>
                             </div>
-                            <div class="flex flex-col w-1/2 h-full space-y-3">
-                                <h2 class="font-bold text-lg">Chính sách trẻ em</h2>
-                                <span>Phù hợp cho tất cả trẻ em.</span>
-                                <span>Trẻ em từ 18 tuổi trở lên sẽ được tính giá như người lớn tại chỗ nghỉ này.</span>
-                                <span
-                                    >Để xem thông tin giá và tình trạng phòng trống chính xác, vui lòng thêm số lượng và
-                                    độ tuổi của trẻ em trong nhóm của bạn khi tìm kiếm.</span
-                                >
-                                <h2 class="font-bold text-lg">Chính sách nôi (cũi) và giường phụ</h2>
 
-                                <div class="border border-gray-200 rounded-lg p-4">
-                                    <div class="space-y-4 w-full">
-                                        <div class="flex justify-between border-b border-gray-300 pb-2 w-full">
-                                            <div class="flex flex-col text-xl">
-                                                <span>Từ 0 tuổi trở lên</span>
+                            <!-- Hàng 2 -->
+                            <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-sign-out-alt mr-2"></i>
+                                    <span>Trả phòng</span>
+                                </div>
+                                <div class="flex flex-col w-1/2 h-full">
+                                    <span>Đến 12:00</span>
+                                </div>
+                            </div>
+
+                            <!-- Hàng 3 -->
+                            <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-credit-card mr-2"></i>
+                                    <span>Hủy đặt phòng/ Trả trước</span>
+                                </div>
+                                <div class="flex flex-col r w-1/2 h-full">
+                                    <span
+                                        >Các chính sách hủy và thanh toán trước sẽ khác nhau tùy vào từng loại chỗ nghỉ.
+                                        Vui lòng nhập ngày lưu trú và xem điều kiện áp dụng cho lựa chọn chỗ nghỉ của
+                                        bạn.</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Hàng 4 -->
+                            <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-child mr-2"></i>
+                                    <span>Trẻ em và giường</span>
+                                </div>
+                                <div class="flex flex-col w-1/2 h-full space-y-3">
+                                    <h2 class="font-bold text-lg">Chính sách trẻ em</h2>
+                                    <span>Phù hợp cho tất cả trẻ em.</span>
+                                    <span
+                                        >Trẻ em từ 18 tuổi trở lên sẽ được tính giá như người lớn tại chỗ nghỉ
+                                        này.</span
+                                    >
+                                    <span
+                                        >Để xem thông tin giá và tình trạng phòng trống chính xác, vui lòng thêm số
+                                        lượng và độ tuổi của trẻ em trong nhóm của bạn khi tìm kiếm.</span
+                                    >
+                                    <h2 class="font-bold text-lg">Chính sách nôi (cũi) và giường phụ</h2>
+
+                                    <div class="border border-gray-200 rounded-lg p-4">
+                                        <div class="space-y-4 w-full">
+                                            <div class="flex justify-between border-b border-gray-300 pb-2 w-full">
+                                                <div class="flex flex-col text-xl">
+                                                    <span>Từ 0 tuổi trở lên</span>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="flex justify-between w-full items-center">
-                                            <div class="flex items-center space-x-2">
-                                                <i class="fas fa-bed text-blue-500"></i>
-                                                <span>Có giường phụ nếu yêu cầu</span>
-                                            </div>
-                                            <div class="flex flex-col">
-                                                <span class="ml-2 bg-green-100 text-green-800 px-2 py-1"
-                                                    >Miễn phí!</span
-                                                >
+                                            <div class="flex justify-between w-full items-center">
+                                                <div class="flex items-center space-x-2">
+                                                    <i class="fas fa-bed text-blue-500"></i>
+                                                    <span>Có giường phụ nếu yêu cầu</span>
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <span class="ml-2 bg-green-100 text-green-800 px-2 py-1"
+                                                        >Miễn phí!</span
+                                                    >
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <span
+                                        >Số lượng giường phụ được phép tùy thuộc vào tùy chọn của bạn. Vui lòng kiểm tra
+                                        tùy chọn mà bạn đã chọn để biết thêm thông tin.</span
+                                    >
+                                    <span>Không chấp nhận thẻ</span>
+                                    <span>Chỗ nghỉ này không có nôi/cũi.</span>
+                                    <span>Tất cả giường phụ tùy thuộc vào tình trạng có sẵn.</span>
                                 </div>
-                                <span
-                                    >Số lượng giường phụ được phép tùy thuộc vào tùy chọn của bạn. Vui lòng kiểm tra tùy
-                                    chọn mà bạn đã chọn để biết thêm thông tin.</span
-                                >
-                                <span>Không chấp nhận thẻ</span>
-                                <span>Chỗ nghỉ này không có nôi/cũi.</span>
-                                <span>Tất cả giường phụ tùy thuộc vào tình trạng có sẵn.</span>
+                            </div>
+
+                            <!-- Hàng 5 -->
+                            <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-user-check mr-2"></i>
+                                    <span>Không giới hạn độ tuổi</span>
+                                </div>
+                                <div class="flex flex-col w-1/2 h-full">
+                                    <span>Không có yêu cầu về độ tuổi khi nhận phòng</span>
+                                </div>
+                            </div>
+
+                            <!-- Hàng 6 -->
+                            <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-paw mr-2"></i>
+                                    <span>Vật nuôi</span>
+                                </div>
+                                <div class="flex flex-col w-1/2 h-full">
+                                    <span>Vật nuôi không được phép.</span>
+                                </div>
+                            </div>
+
+                            <!-- Hàng 7 -->
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex items-center text-xl gap-3">
+                                    <i class="fas fa-money-bill-wave mr-2"></i>
+                                    <span>Chỉ thanh toán bằng tiền mặt</span>
+                                </div>
+                                <div class="flex flex-col w-1/2 h-full">
+                                    <span>Chỗ nghỉ này chỉ chấp nhận thanh toán bằng tiền mặt.</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <!-- Hàng 5 -->
-                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-user-check mr-2"></i>
-                                <span>Không giới hạn độ tuổi</span>
-                            </div>
-                            <div class="flex flex-col w-1/2 h-full">
-                                <span>Không có yêu cầu về độ tuổi khi nhận phòng</span>
-                            </div>
+            <!-- Thông tin quan trọng -->
+            <div class="space-y-6">
+                <div class="space-y-3">
+                    <div class="flex justify-between">
+                        <div>
+                            <h1 class="font-bold text-3xl">Thông tin quan trọng</h1>
                         </div>
 
-                        <!-- Hàng 6 -->
-                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-paw mr-2"></i>
-                                <span>Vật nuôi</span>
-                            </div>
-                            <div class="flex flex-col w-1/2 h-full">
-                                <span>Vật nuôi không được phép.</span>
-                            </div>
+                        <div>
+                            <button
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-"
+                            >
+                                <span>Xem phòng trống</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-xl text-gray-600">Thông tin quan trọng về chỗ nghỉ này</h2>
+                    </div>
+                </div>
+
+                <div class="border border-gray h-20 p-3 text-lg rounded-lg">
+                    Khách cần phải xuất trình giấy tờ tùy thân có ảnh và thẻ tín dụng vào thời điểm nhận phòng. Vui lòng
+                    lưu ý tất cả các Yêu cầu Đặc biệt đều tùy thuộc vào tình trạng phòng trống và phụ phí có thể sẽ được
+                    tính thêm.
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4 shadow-md">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="flex flex-col bg-indigo-50 p-4 col-span-1">
+                            <h2 class="text-3xl font-bold">Những câu hỏi thường gặp về Nostalgia Boutique Hotel</h2>
                         </div>
 
-                        <!-- Hàng 7 -->
-                        <div class="flex justify-between items-center w-full">
-                            <div class="flex items-center text-xl gap-3">
-                                <i class="fas fa-money-bill-wave mr-2"></i>
-                                <span>Chỉ thanh toán bằng tiền mặt</span>
-                            </div>
-                            <div class="flex flex-col w-1/2 h-full">
-                                <span>Chỗ nghỉ này chỉ chấp nhận thanh toán bằng tiền mặt.</span>
+                        <div class="flex flex-col col-span-2">
+                            <div class="space-y-8">
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Nostalgia Boutique Hotel có những loại phòng nào?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Nostalgia Boutique Hotel có phục vụ dạng bữa sáng nào?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Nostalgia Boutique Hotel có hồ bơi không?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Nostalgia Boutique Hotel có giờ nhận và trả phòng như thế nào?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Tôi có thể làm gì ở Nostalgia Boutique Hotel?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Nostalgia Boutique Hotel có phổ biến với các gia đình không?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Nostalgia Boutique Hotel cách trung tâm Đà Nẵng bao xa?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
+
+                                <div class="border-b border-gray-300 pb-2">
+                                    <div class="flex justify-between">
+                                        <h2 class="text-xl font-semibold mb-2">
+                                            Chi phí nghỉ tại Nostalgia Boutique Hotel là bao nhiêu?
+                                        </h2>
+                                        <i class="bi bi-chevron-down ml-2"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
